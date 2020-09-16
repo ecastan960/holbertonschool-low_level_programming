@@ -5,7 +5,7 @@
 #include <string.h>
 /**
  * main - This is a description
- * return: 0 characters
+ * Return: The sum of the two parameters
  */
 int main(void)
 {
