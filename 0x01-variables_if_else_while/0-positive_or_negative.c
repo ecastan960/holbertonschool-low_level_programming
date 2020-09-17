@@ -23,7 +23,7 @@ else if (n > 0)
 {
 printf("%d is positive\n", n);
 }
-else
+else if (n == 0)
 {
 printf("is zero\n");
 }
