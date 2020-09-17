@@ -2,6 +2,7 @@
  *This program will assign a random number to the variable n and prints
  *if the number is positive, negative or zero.
  */
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
@@ -26,4 +27,5 @@ else
 {
 printf("is zero\n");
 }
+return (0);
 }
