@@ -1,21 +1,17 @@
 /**
  * title - This program will assign a random number
  * if the number is positive, negative or zero.
- * main - random number
+ * main - random numbersfdsg
+ *        sfgsdfgsdfgsdg
+ *
+ * Description: prints numbersadfasfasdf
+ * asdfasdfasfdasdfdaf fasdfas
  * Return: 0
- * Description: prints number
+ *
  */
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/**
- * main(void) - Short description, single line
- * @n: Description of parameter x
- *
- * Description: Longer description of the function
- *
- * Return: Description of the returned value
- */
 int main(void)
 {
 int n;
