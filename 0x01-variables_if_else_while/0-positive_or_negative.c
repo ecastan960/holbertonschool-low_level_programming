@@ -1,8 +1,6 @@
 /**
- * title - This program will assign a random number
+ * main - This program will assign a random number
  * if the number is positive, negative or zero.
- * main - random numbersfdsg
- *        sfgsdfgsdfgsdg
  *
  * Description: prints numbersadfasfasdf
  * asdfasdfasfdasdfdaf fasdfas
