@@ -1,14 +1,20 @@
 /**
- *This program will assign a random number to the variable n and prints
- *if the number is positive, negative or zero.
+ * title - This program will assign a random number
+ * if the number is positive, negative or zero.
+ * main - random number
+ * Return: 0
+ * Description: prints number
  */
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Prints a number and mentions if it is posivite, negative or zero
- * @n : This variables stores a random number
- * Return: 0
+ * main(void) - Short description, single line
+ * @n: Description of parameter x
+ *
+ * Description: Longer description of the function
+ *
+ * Return: Description of the returned value
  */
 int main(void)
 {
