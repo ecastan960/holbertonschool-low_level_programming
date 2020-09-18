@@ -23,6 +23,10 @@ if (l > '0' && m < con)
 {
 m = con;
 }
+if (l == '0' && m == '0')
+{
+m = '1';
+}
 putchar(l);
 putchar(m);
 if (l == '8' && m == '9')
