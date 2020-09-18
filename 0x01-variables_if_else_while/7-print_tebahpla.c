@@ -10,7 +10,7 @@
 #include <stdio.h>
 int main(void)
 {
-char l;
+int l;
 for (l = 'z' ; l >= 'a' ; l--)
 {
 putchar(l);
