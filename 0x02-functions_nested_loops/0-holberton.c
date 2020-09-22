@@ -1,3 +1,4 @@
+#include "holberton.h"
 /**
  * main - This program will print using _putchar function
  *
@@ -5,7 +6,6 @@
  * Return: 0
  *
  */
-#include "holberton.h"
 int main(void)
 {
 int a;
