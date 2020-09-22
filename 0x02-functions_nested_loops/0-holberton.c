@@ -7,7 +7,6 @@
  * Return: 0
  *
  */
-#include <unistd.h>
 int _putchar(char c);
 char h[] = "Holberton";
 int main(void)
