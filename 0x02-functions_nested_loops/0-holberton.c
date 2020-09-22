@@ -1,6 +1,6 @@
 /**
  * main - This program will print using _putchar function
- *
+ * 
  * @c: The character to print
  * Description: prints Holberton using the function
  * Return: 0
