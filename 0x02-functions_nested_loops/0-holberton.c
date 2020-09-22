@@ -6,11 +6,11 @@
  * Return: 0
  *
  */
-int _putchar(char c);
-char h[] = "Holberton";
+#include "holberton.h"
 int main(void)
 {
 int a;
+char h[] = "Holberton";
 for (a = 0; a <= 8 ; a++)
 {
 _putchar(h[a]);
