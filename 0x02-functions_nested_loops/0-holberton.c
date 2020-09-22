@@ -6,7 +6,7 @@
  * Return: 0
  *
  */
-int _putchar(char c);
+#include "holberton.h"
 char h[] = "Holberton";
 int main(void)
 {
