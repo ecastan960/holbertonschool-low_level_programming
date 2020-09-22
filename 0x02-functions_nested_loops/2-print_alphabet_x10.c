@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_alphabet - This program will print using _putchar function
+ * print_alphabet_x10 - This program will print using _putchar function
  *
  * Description: prints Holberton using the function
  * Return: 0
