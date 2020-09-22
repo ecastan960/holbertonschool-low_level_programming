@@ -1,9 +1,8 @@
 /**
- * main - This program will assign a random number
- * if the number is positive, negative or zero.
+ * main - This program will print using _putchar function
  * @c: The character to print
- * Description: prints numbers
- * and the prints if it is positive,negative or zero
+ * Description: prints Holberton using the function
+ * _putchar()
  * Return: 0
  *
  */
