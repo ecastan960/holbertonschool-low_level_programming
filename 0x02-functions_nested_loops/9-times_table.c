@@ -20,25 +20,25 @@ _putchar(48);
 else
 {
 c = a * b;
-if ( c >= 10 )
+if (c >= 10)
 {
 d = c;
-while (d >= 10 )
+while (d >= 10)
 {
-d = d /10;
+d = d / 10;
 }
 e = c % 10;
 _putchar(',');
 _putchar(' ');
-_putchar(d+48);
-_putchar(e+48);
+_putchar(d + 48);
+_putchar(e + 48);
 }
-else 
+else
 {
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
-_putchar(c+48);
+_putchar(c + 48);
 }
 }
 }
