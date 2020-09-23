@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _islower - This program will print using _putchar function
+ * _isalpha - This program will print using _putchar function
  * @c: The character to evaluate
  *
  * Description: prints Holberton using the function
