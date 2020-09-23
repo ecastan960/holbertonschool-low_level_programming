@@ -14,8 +14,8 @@ int a;
 int b;
 if (n < 0)
 {
-n = n * -1;
 a = n % 10;
+a = a * -1;
 b = a + 48;
 _putchar(b);
 return (a);
