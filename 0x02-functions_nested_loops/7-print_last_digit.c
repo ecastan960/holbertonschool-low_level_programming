@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * print_last_digit - This program will print using _putchar function
  * @n: The character to evaluate
