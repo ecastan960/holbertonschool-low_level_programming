@@ -16,14 +16,10 @@ for (b = 0; b <= 14 ; b++)
 {
 if (b > 9)
 {
-d = b % 10;
 _putchar(49);
+}
+d = b % 10;
 _putchar(d + 48);
-}
-else
-{
-_putchar(b + 48);
-}
 }
 _putchar('\n');
 }
