@@ -14,9 +14,8 @@ if (c >= 97 && c <= 122)
 {
 return (1);
 }
-else if (c >= 65 && c <= 90)
+else
 {
 return (0);
 }
-return (0);
 }
