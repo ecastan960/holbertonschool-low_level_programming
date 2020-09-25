@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_line - This program will print using _putchar function
+ * print_diagonal - This program will print using _putchar function
  * @n: integer to evaluate
  *
  * Description: prints Holberton using the function
@@ -16,11 +16,11 @@ if (n <= 0)
 }
 else
 {
-if ( n > 1)
+if (n > 1)
 {
-for (a = 0; a < n ; a++ )
+for (a = 0; a < n ; a++)
 {
-for (b = 0 ; b < a ; b++ )
+for (b = 0 ; b < a ; b++)
 {
 _putchar(' ');
 }
