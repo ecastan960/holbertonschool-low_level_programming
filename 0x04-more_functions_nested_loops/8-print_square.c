@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * print_diagonal - This program will print using _putchar function
- * @n: integer to evaluate
+ * print_square - This program will print using _putchar function
+ * @size: integer to evaluate
  *
  * Description: prints Holberton using the function
  * Return: 0
