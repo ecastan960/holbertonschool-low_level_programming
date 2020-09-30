@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stdio.h>
+
 /**
  * print_rev - This program will print using _putchar function
  * @s: string
