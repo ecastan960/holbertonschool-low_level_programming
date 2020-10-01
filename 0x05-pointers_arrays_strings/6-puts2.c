@@ -16,7 +16,7 @@ s1 = str;
 for (a = 0; str[a] != '\0'; ++a)
 {
 }
-for (b = 0; b < a - 1; ++b)
+for (b = 0; b <= a - 1; ++b)
 {
 c = *s1;
 if (b % 2 == 0)
