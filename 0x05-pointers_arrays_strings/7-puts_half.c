@@ -28,7 +28,7 @@ for (b = 0; b < n; b++)
 {
 s1++;
 }
-for (b = n; b <= a - 1; ++b)
+for (b = n; b < a ; ++b)
 {
 c = *s1;
 _putchar(c);
