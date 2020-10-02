@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strncat - This program will print using _putchar function
+ * _strncpy - This program will print using _putchar function
  * @dest: string
  * @src: string
  * @n: number
@@ -10,15 +10,11 @@
  *
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 
 int a = 0, b, c;
-while (*dest)
-{
-dest++;
-a = a + 1;
-}
+
 for (c = 0 ; c < n; c++)
 {
 if (*src != '\0')
@@ -29,7 +25,6 @@ src++;
 a = a + 1;
 }
 }
-*dest = '\0';
 for (b = 0; b < a; b++)
 {
 dest--;
