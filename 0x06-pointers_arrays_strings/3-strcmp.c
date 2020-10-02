@@ -1,10 +1,9 @@
 #include "holberton.h"
 
 /**
- * _strncpy - This program will print using _putchar function
- * @dest: string
- * @src: string
- * @n: number
+ * _strcmp - This program will print using _putchar function
+ * @s1: string
+ * @s2: string
  * Description: prints Holberton using the function
  * Return: s
  *
