@@ -17,13 +17,10 @@ int a = 0, b, c;
 
 for (c = 0 ; c < n; c++)
 {
-if (*src != '\0')
-{
 *dest = *src;
 dest++;
 src++;
 a = a + 1;
-}
 }
 for (b = 0; b < a; b++)
 {
