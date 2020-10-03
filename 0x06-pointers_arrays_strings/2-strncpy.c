@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strncpy - This program will print using _putchar function
+ * _strncpy - This program 
  * @dest: string
  * @src: string
  * @n: number
