@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strncpy - This program 
+ * _strncpy - This program
  * @dest: string
  * @src: string
  * @n: number
