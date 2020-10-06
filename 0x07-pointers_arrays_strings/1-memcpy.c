@@ -2,8 +2,8 @@
 
 /**
  * _memcpy - This program will print using _putchar function
- * @s: array
- * @b: number
+ * @dest: array
+ * @src: number
  * @n: number
  * Description: prints Holberton using the function
  * Return: char
