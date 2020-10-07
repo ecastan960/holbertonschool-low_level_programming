@@ -11,22 +11,31 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-unsigned int i = 0;
-int c = 0;
-while (*accept != 0)
+int i = 0, c = 0, d = 0, e = 0;
+while (*accept)
 {
-while (*s != 0 || *s != 32)
+while (s[i] != 0)
 {
-if (*s == *accept)
+if (s[i] == *accept)
 {
+if (d == 0)
+{
+d = i;
+c = i;
+}
+else if (i < c)
+{
+c = i;
+}
+}
 i = i + 1;
 }
-c = c + 1;
-s++;
-}
-s = s - c;
-c = 0;
+i = 0;
 accept++;
 }
-return (i);
+for (e = 0 ; e < c; e++)
+{
+s++;
+}
+return (s);
 }
