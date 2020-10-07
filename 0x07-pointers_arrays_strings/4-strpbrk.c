@@ -33,9 +33,19 @@ i = i + 1;
 i = 0;
 accept++;
 }
+if (c != 0)
+{
 for (e = 0 ; e < c; e++)
 {
 s++;
+}
+}
+else
+{
+while (*s)
+{
+s++;
+}
 }
 return (s);
 }
