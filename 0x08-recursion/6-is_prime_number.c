@@ -39,7 +39,7 @@ return (0);
 }
 
 /**
- * _sqrt_recursion - This program will print using _putchar function
+ * is_prime_number - This program will print using _putchar function
  * @n: array
  * Description: prints Holberton using the function
  * Return: s
