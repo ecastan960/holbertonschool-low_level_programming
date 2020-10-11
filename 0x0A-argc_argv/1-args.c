@@ -17,5 +17,5 @@ while (argv[i])
 i++;
 }
 printf("%d\n", i - 1);
-return (i);
+return (0);
 }
