@@ -2,14 +2,14 @@
 
 /**
  * main - writes the character c to stdout
+ *
  * @argc: unused
  * @argv: name of program
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: i.
  */
 
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
 int i = 0;
 while (argv[i])
