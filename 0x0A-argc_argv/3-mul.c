@@ -21,7 +21,7 @@ n1++;
 n1 = n1 - 1;
 if (n1 < 2)
 {
-printf("error\n");
+printf("Error\n");
 return (1);
 }
 else
