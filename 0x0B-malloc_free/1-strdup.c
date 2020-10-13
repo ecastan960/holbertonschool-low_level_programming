@@ -12,13 +12,13 @@ char *_strdup(char *str)
 {
 int b, size = 0;
 char *a;
-while (str[size] != 0)
-{
-size++;
-}
 if (str == 0)
 {
 return (0);
+}
+while (str[size] != 0)
+{
+size++;
 }
 else
 {
