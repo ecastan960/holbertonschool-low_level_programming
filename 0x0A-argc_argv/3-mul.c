@@ -45,11 +45,11 @@ for (c = n2 - 1; c >= n; --c)
 {
 if (c == n2 - 1)
 {
-num[a - 1] = argv[a][c] - 48;
+num[a - 1] = argv[a][c];
 }
 else
 {
-num[a - 1] = ((argv[a][c] - 48) * (d)) + num[a - 1];
+num[a - 1] = ((argv[a][c]) * (d)) + num[a - 1];
 d = d * 10;
 }
 }
