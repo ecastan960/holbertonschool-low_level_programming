@@ -20,7 +20,7 @@ return (0);
 else
 {
 a = (char *)malloc(size * sizeof(char));
-if (a <= 0)
+if (a == 0)
 {
 return (0);
 }
