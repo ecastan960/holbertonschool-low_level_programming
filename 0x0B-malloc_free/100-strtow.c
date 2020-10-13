@@ -27,6 +27,6 @@ for (b = 0; b < size; b++)
 {
 a[b] = c;
 }
-return (a);
+return (str);
 }
 }
