@@ -20,6 +20,10 @@ return (0);
 else
 {
 a = (char *)malloc(size * sizeof(char));
+if (a <= 0)
+{
+return (0);
+}
 for (b = 0; b < size; b++)
 {
 a[b] = c;
