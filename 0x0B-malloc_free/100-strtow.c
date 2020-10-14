@@ -25,7 +25,7 @@ return (0);
 }
 for (b = 0; b < size; b++)
 {
-a[b] = c;
+str[b] = c;
 }
 return (str);
 }
