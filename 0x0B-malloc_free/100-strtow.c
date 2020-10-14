@@ -10,23 +10,22 @@
 
 char **strtow(char *str)
 {
-unsigned int b, size;
-char *c;
-if (size <= 0)
+int a = 0, size = 0;
+if (str == 0 || str == 45)
 {
 return (0);
 }
 else
 {
-str = (char *)malloc(size * sizeof(char));
-if (str == 0)
+while (str[size] != 0)
 {
-return (0);
+size++;
 }
-for (b = 0; b < size; b++)
+char **s = (char **)malloc(size *sizeof(char *));
+for (a = 0; a < ac; a++)
 {
-str[b] = c;
+s[a] = *av[a];
 }
-return (str);
 }
+return (s);
 }
