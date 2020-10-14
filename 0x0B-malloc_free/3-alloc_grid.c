@@ -19,18 +19,18 @@ return (0);
 else
 {
 int **array = (int **)malloc(height * sizeof(int *));
-if (array == 0)
+if (array == NULL)
 {
 free(array);
-return (0);
+return (NULL);
 }
 for (a = 0; a < height; a++)
 {
 array[a] = (int *)malloc(width * sizeof(int *));
-if (array[a] == 0)
+if (array[a] == NULL)
 {
 free(array[a]);
-return (0);
+return (NULL);
 }
 }
 for (a = 0; a < height; a++)
