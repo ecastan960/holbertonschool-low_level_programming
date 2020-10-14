@@ -12,12 +12,12 @@
 char *argstostr(int ac, char **av)
 {
 int a = 0;
-char *s;
 
-s = malloc(ac * sizeof(char));
+
+char *s = (char *)malloc(ac * sizeof(char));
 for (a = 0; a < ac; a++)
 {
-s[a] = av[a];
+s[a] = *av[a];
 }
 return (s);
 }
