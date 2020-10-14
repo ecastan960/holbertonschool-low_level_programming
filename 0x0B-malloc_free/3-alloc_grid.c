@@ -21,6 +21,7 @@ else
 int **array = (int **)malloc(height * sizeof(int *));
 if (array == 0)
 {
+free(array);
 return (0);
 }
 for (a = 0; a < height; a++)
