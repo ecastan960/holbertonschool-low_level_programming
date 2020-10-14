@@ -19,6 +19,10 @@ return (0);
 else
 {
 int **array = (int **)malloc(height * sizeof(int *));
+if (array == 0)
+{
+return (0);
+}
 for (a = 0; a < height; a++)
 {
 array[a] = (int *)malloc(width * sizeof(int *));
