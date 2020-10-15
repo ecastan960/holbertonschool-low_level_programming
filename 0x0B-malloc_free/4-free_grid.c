@@ -16,7 +16,7 @@ while (grid[a] != 0)
 {
 for (b = 0; b < height; b++)
 {
-free(grid[a][b]);
+free(grid[b]);
 }
 a++;
 }
