@@ -20,7 +20,7 @@ if (s1 == NULL)
 }
 if (s2 == NULL)
 {
-*s1 = ' ';
+*s2 = ' ';
 }
 while (s1[size1] != 0)
 {
