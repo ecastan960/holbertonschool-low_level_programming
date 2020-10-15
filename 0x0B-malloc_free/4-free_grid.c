@@ -16,8 +16,11 @@ if (grid == NULL || height == 0)
 {
 free(grid);
 }
+else
+{
 for (a = 0; a < height; a++)
 {
 free(grid[a]);
+}
 }
 }
