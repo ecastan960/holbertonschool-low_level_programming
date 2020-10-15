@@ -24,11 +24,11 @@ s2 = "";
 }
 while (s1[si1] != 0)
 {
-size1++;
+si1++;
 }
 while (s2[si2] != 0)
 {
-size2++;
+si2++;
 }
 if (n < si2)
 {
