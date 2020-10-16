@@ -24,12 +24,12 @@ if (c == 0)
 {
 return (NULL);
 }
-p = malloc(b * c);
+p = malloc(nmemb * size);
 if (p == NULL)
 {
 return (NULL);
 }
-for (a = 0; a < b; a++)
+for (a = 0; a < nmemb; a++)
 {
 p[a] = 0;
 }
