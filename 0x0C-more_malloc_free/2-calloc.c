@@ -1,52 +1,26 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * string_nconcat - Function that concatenates two strings
- * @s1: first string
- * @s2: second string
- * @n: size of memory allocate
+ * _calloc - Function that concatenates two strings
+ * @nmemb: first string
+ * @size: second string
  * Description: prints Holberton using the function
  * Return: s
  *
  */
 
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-unsigned int b, c = 0, si1 = 0, si2 = 0;
-char *a;
-if (s1 == NULL)
+int *p;
+unsigned int a;
+p = malloc(nmemb * size);
+if (p == NULL)
 {
-s1 = "";
+return (NULL);
 }
-if (s2 == NULL)
+for (a = 0; a < nmemb; a++)
 {
-s2 = "";
+p[a] = 0;
 }
-while (s1[si1] != 0)
-{
-si1++;
-}
-while (s2[si2] != 0)
-{
-si2++;
-}
-if (n < si2)
-{
-si2 = n;
-}
-
-a = malloc((si1 + si2 + 1) * sizeof(char));
-if (a == 0)
-{
-return (0);
-}
-for (b = 0; b < si1; b++)
-{
-a[b] = s1[b];
-}
-for (c = 0; c <= si2; c++)
-{
-a[b + c] = s2[c];
-}
-return (a);
+return (p);
 }
