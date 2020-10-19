@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints the program 
+ * main - Prints the program
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
