@@ -1,4 +1,4 @@
 #Preprocesor
 ```
-Examples of macros and preprocessor in C
+Examples of macros and preprocessor files in C
 ```
