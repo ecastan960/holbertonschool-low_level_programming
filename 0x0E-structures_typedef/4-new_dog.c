@@ -28,13 +28,17 @@ if (owner == NULL)
 return (NULL);
 }
 d = malloc(sizeof(dog_t));
-if (d == 0)
+if (d == NULL)
 {
 free(d);
-return (0);
+return (NULL);
 }
+else
+{
 d->name = name;
 d->age = age;
 d->owner = owner;
 return (d);
+}
+return (0);
 }
