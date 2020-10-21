@@ -2,39 +2,24 @@
 #include <stdio.h>
 
 /**
- * print_dog - writes the character c to stdout
+ * new_dog - function to assign values to dog structure
  *
- * @d: function
+ * @name: Name of the dog
+ * @age: age of the dog
+ * @owner: Name of the owner
  *
  */
 
-void print_dog(struct dog *d)
+dog_t *new_dog(char *name, float age, char *owner)
 {
-if (d != 0)
+dog_t *d;
+d = malloc(sizeof(dog_t));
+if (d == 0)
 {
-if (d->name == 0)
-{
-printf("Name: (nil)\n");
+return (0);
 }
-else
-{
-printf("Name: %s\n", d->name);
-}
-if (d->age == 0)
-{
-printf("Age: (nil)\n");
-}
-else
-{
-printf("Age: %f\n", d->age);
-}
-if (d->owner == 0)
-{
-printf("Owner: (nil)\n");
-}
-else
-{
-printf("Owner: %s\n", d->owner);
-}
-}
+d -> name = name;
+d -> age = age;
+d -> owner=owner;
+return (d);
 }
