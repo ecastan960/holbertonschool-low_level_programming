@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * new_dog - function to assign values to dog structure
@@ -13,7 +14,7 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *d;
+dog_t *d = NULL;
 d = malloc(sizeof(dog_t));
 if (d == 0)
 {
