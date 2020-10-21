@@ -30,6 +30,7 @@ return (NULL);
 d = malloc(sizeof(dog_t));
 if (d == 0)
 {
+free(d);
 return (0);
 }
 d->name = name;
