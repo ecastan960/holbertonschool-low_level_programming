@@ -18,6 +18,8 @@ if (size <= 0)
 {
 return (-1);
 }
+else
+{
 if (array != NULL && cmp != NULL)
 {
 for (i = 0; i < size; i++)
@@ -31,6 +33,7 @@ c = 1;
 if (c == 0)
 {
 return (-1);
+}
 }
 }
 return (0);
