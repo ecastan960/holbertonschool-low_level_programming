@@ -24,15 +24,22 @@ if (n == 0)
 if (n != 0 && s != 0)
 {
 	va_start(prints, n);
+
 	for (i = 0; i < n ; i++)
 	{
-		if (i < n - 1)
+		char *s = va_arg(prints, char*);
+
+		if (s == NULL)
 		{
-			printf("%s%c ", va_arg(prints, char*), *separator);
+			printf("(nil)");
+		}
+		if (i < n - 1 && s != 0)
+		{
+			printf("%s%c ", s, *separator);
 		}
 		if (i == n - 1)
 		{
-			printf("%s\n", va_arg(prints, char*));
+			printf("%s\n", s);
 		}
 		va_end(prints);
 	}
