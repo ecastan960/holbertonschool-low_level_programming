@@ -31,10 +31,6 @@ for (i = 0; i < n ; i++)
 	{
 		printf("(nil)");
 	}
-	if (s == NULL)
-	{
-		printf("(nil)");
-	}
 	if (i < n - 1 && separator != NULL)
 	{
 		printf("%s", separator);
