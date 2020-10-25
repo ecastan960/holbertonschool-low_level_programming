@@ -22,25 +22,20 @@ if (n == 0)
 printf("\n");
 return;
 }
-if (n != 0)
+if (n != 0 && s != 0)
 {
 va_start(pa, n);
 for (i = 0; i < n ; i++)
 {
 if (i < n - 1)
 {
-if (s != 0)
-{
 printf("%d%c ", va_arg(pa, int), *separator);
 }
-else
-{
-printf("%d ", va_arg(pa, int));
-}
-}
 if (i == n - 1)
+{
 printf("%d\n", va_arg(pa, int));
 }
 va_end(pa);
+}
 }
 }
