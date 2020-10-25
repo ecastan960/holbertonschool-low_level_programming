@@ -19,7 +19,7 @@ va_list prints;
 s = separator;
 if (n != 0)
 {
-va_start (prints, n);
+va_start(prints, n);
 for (i = 0; i < n ; i++)
 {
 if (i < n - 1)
