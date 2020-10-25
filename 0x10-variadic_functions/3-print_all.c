@@ -39,13 +39,13 @@ void print_all(const char * const format, ...)
 int i = 0, c = 0, n = 0;
 char *str;
 va_list print;
-str = (char *)malloc(9 * sizeof(char));
+str = (char *)malloc(sizeof(char));
 while (format[n])
 {
-
 if (form(format[n]) != 0)
 {
 str[c] = format[n];
+str = (char *)realloc(str, (c+2)*sizeof(char));
 c = c + 1;
 }
 n++;
