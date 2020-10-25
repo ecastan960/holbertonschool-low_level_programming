@@ -45,7 +45,7 @@ while (format[n])
 if (form(format[n]) != 0)
 {
 str[c] = format[n];
-str = (char *)realloc(str, (c+2)*sizeof(char));
+str = (char *)realloc(str, (c + 2) * sizeof(char));
 c = c + 1;
 }
 n++;
