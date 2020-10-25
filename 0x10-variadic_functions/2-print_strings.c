@@ -22,17 +22,22 @@ for (i = 0; i < n ; i++)
 {
 	char *s = va_arg(prints, char*);
 
+
+	if (s != NULL)
+	{
+		printf("%s", s);
+	}
+	else
+	{
+		printf("(nil)");
+	}
 	if (s == NULL)
 	{
 		printf("(nil)");
 	}
-	else if (i < n - 1 && s != NULL && separator != NULL)
+	if (i < n - 1 && separator != NULL)
 	{
-		printf("%s%s", s, separator);
-	}
-	else if (i == n - 1 && separator != NULL)
-	{
-		printf("%s", s);
+		printf("%s", separator);
 	}
 }
 va_end(prints);
