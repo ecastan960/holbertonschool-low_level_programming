@@ -28,7 +28,7 @@ for (i = 0; i < n ; i++)
 	}
 	else if (i < n - 1 && s != NULL && separator != NULL)
 	{
-		printf("%s%c ", s, *separator);
+		printf("%s%s", s, separator);
 	}
 	else if (i == n - 1 && separator != NULL)
 	{
