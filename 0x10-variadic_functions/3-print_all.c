@@ -36,7 +36,7 @@ return (0);
 
 void print_all(const char * const format, ...)
 {
-int i, c = 0, n = 0;
+int i = 0, c = 0, n = 0;
 char *str;
 va_list print;
 str = (char *)malloc(9 * sizeof(char));
@@ -52,7 +52,7 @@ n++;
 }
 
 va_start(print, format);
-for (i = 0; i < c; i++)
+while (i < c)
 {
 char *s = form(str[i]);
 char *d = va_arg(print, int*);
@@ -61,6 +61,7 @@ if (i < c - 1)
 {
 printf(", ");
 }
+i++;
 }
 printf("\n");
 }
