@@ -17,6 +17,11 @@ unsigned int i;
 const char *s;
 va_list pa;
 s = separator;
+if (n == 0)
+{
+printf("\n");
+return;
+}
 if (n != 0)
 {
 va_start(pa, n);
