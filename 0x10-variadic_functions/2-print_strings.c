@@ -17,25 +17,25 @@ unsigned int i;
 const char *s;
 va_list prints;
 s = separator;
-if (n != 0)
+if (n == 0)
+{
+printf("\n");
+return;
+}
+if (n != 0 && s != 0)
 {
 va_start(prints, n);
 for (i = 0; i < n ; i++)
 {
 if (i < n - 1)
 {
-if (s != 0)
-{
 printf("%s%c ", va_arg(prints, char*), *separator);
 }
-else
-{
-printf("%s ", va_arg(prints, char*));
-}
-}
 if (i == n - 1)
+{
 printf("%s\n", va_arg(prints, char*));
 }
 va_end(prints);
+}
 }
 }
