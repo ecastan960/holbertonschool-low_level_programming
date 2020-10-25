@@ -22,9 +22,9 @@ if (n == 0)
 printf("\n");
 return;
 }
+va_start(pa, n);
 if (n != 0 && s != 0)
 {
-va_start(pa, n);
 for (i = 0; i < n ; i++)
 {
 if (i < n - 1)
