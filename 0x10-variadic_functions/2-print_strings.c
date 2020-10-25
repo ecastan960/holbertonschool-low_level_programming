@@ -19,23 +19,22 @@ va_list prints;
 s = separator;
 if (n == 0)
 {
-printf("\n");
-return;
+	printf("\n");
 }
 if (n != 0 && s != 0)
 {
-va_start(prints, n);
-for (i = 0; i < n ; i++)
-{
-if (i < n - 1)
-{
-printf("%s%c ", va_arg(prints, char*), *separator);
-}
-if (i == n - 1)
-{
-printf("%s\n", va_arg(prints, char*));
-}
-va_end(prints);
-}
+	va_start(prints, n);
+	for (i = 0; i < n ; i++)
+	{
+		if (i < n - 1)
+		{
+			printf("%s%c ", va_arg(prints, char*), *separator);
+		}
+		if (i == n - 1)
+		{
+			printf("%s\n", va_arg(prints, char*));
+		}
+		va_end(prints);
+	}
 }
 }
