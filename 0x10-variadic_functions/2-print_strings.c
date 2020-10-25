@@ -26,14 +26,15 @@ for (i = 0; i < n ; i++)
 	{
 		printf("(nil)");
 	}
-	if (i < n - 1 && s != 0)
+	else if (i < n - 1 && s != NULL)
 	{
 		printf("%s%c ", s, *separator);
 	}
-	if (i == n - 1)
+	else if (i == n - 1)
 	{
-		printf("%s\n", s);
+		printf("%s", s);
 	}
-	va_end(prints);
 }
+va_end(prints);
+printf("\n");
 }
