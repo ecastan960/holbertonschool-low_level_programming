@@ -26,11 +26,11 @@ for (i = 0; i < n ; i++)
 	{
 		printf("(nil)");
 	}
-	else if (i < n - 1 && s != NULL)
+	else if (i < n - 1 && s != NULL && separator != NULL)
 	{
 		printf("%s%c ", s, *separator);
 	}
-	else if (i == n - 1)
+	else if (i == n - 1 && separator != NULL)
 	{
 		printf("%s", s);
 	}
