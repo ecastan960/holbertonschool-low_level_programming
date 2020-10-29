@@ -11,44 +11,43 @@
 
 void print_all(const char * const format, ...)
 {
-	int i = 0, n = 0, sep = 0;
+	int i = 0, sep = 0;
 	char *str;
 	va_list print;
 
-	while (format[n])
-		n++;
-	va_start(print, format);
-	while (format[i])
+	if (format != NULL)
 	{
-		switch (format[i])
+		va_start(print, format);
+		while (format[i])
 		{
-		case 'c':
-			printf("%c",  va_arg(print, int)), i++, sep = 1;
-			break;
-		case 'i':
-			printf("%d",  va_arg(print, int)), i++, sep = 1;
-			break;
-		case 'f':
-			printf("%f", va_arg(print, double)), i++, sep = 1;
-			break;
-		case 's':
-			str = va_arg(print, char*);
-			if (str == NULL)
+			switch (format[i])
 			{
-				printf("(nil)"), i++, sep = 1;
+			case 'c':
+				printf("%c",  va_arg(print, int)), i++, sep = 1;
+				break;
+			case 'i':
+				printf("%d",  va_arg(print, int)), i++, sep = 1;
+				break;
+			case 'f':
+				printf("%f", va_arg(print, double)), i++, sep = 1;
+				break;
+			case 's':
+				str = va_arg(print, char*);
+				if (str == NULL)
+				{
+					printf("(nil)"), i++, sep = 1;
+					break;
+				}
+				printf("%s", str), i++, sep = 1;
+				break;
+			default:
+				i++, sep = 0;
 				break;
 			}
-			printf("%s", str), i++, sep = 1;
-			break;
-		default:
-			i++, sep = 0;
-			break;
+			if (format[i] != 0 && sep == 1)
+				printf(", ");
 		}
-		if (i < n && sep == 1)
-		{
-			printf(", ");
-		}
+		va_end(print);
+		printf("\n");
 	}
-	va_end(print);
-	printf("\n");
 }
