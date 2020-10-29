@@ -1,18 +1,17 @@
-section .data
-    text db "Hello, Holberton",10
-    text_len equ $ -text
+section .data:
 
+msg db "Hello, world!",0xA,0xD
+len equ $ - msg
 
-section .text
-    global _start
+section .text:
+    global main
 
-_start:
-    mov edx, text_len
-    mov ccx, text
-    mov ebx, 1
+main:
     mov eax, 4
+    mov ebx, 1
+    mov ecx, msg
+    mov edx, len
     int 0x80
 
     mov eax, 1
-    mov ebx, 0
     int 0x80
