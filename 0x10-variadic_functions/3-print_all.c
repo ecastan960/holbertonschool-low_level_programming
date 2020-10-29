@@ -22,21 +22,19 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 		case 'c':
-			printf("%c",  va_arg(print, int));
-			i++, sep = 1;
+			printf("%c",  va_arg(print, int)), i++, sep = 1;
 			break;
 		case 'i':
-			printf("%d",  va_arg(print, int));
-			i++, sep = 1;
+			printf("%d",  va_arg(print, int)), i++, sep = 1;
 			break;
 		case 'f':
-			printf("%f", va_arg(print, double));
-			i++, sep = 1;
+			printf("%f", va_arg(print, double)), i++, sep = 1;
 			break;
 		case 's':
-			printf("%s", va_arg(print, char*));
-			i++, sep = 1;
+			printf("%s", va_arg(print, char*)), i++, sep = 1;
 			break;
+                case 0:
+                        printf("(nil)");
 		default:
 			i++, sep = 0;
 			break;
