@@ -11,12 +11,10 @@
 
 void print_all(const char * const format, ...)
 {
-	int i = 0, n = 0, sep = 0;
+	int i = 0, sep = 0;
 	char *str;
 	va_list print;
 
-	while (format[n])
-		n++;
 	va_start(print, format);
 	while (format[i])
 	{
@@ -41,7 +39,7 @@ void print_all(const char * const format, ...)
 			i++, sep = 0;
 			break;
 		}
-		if (i < n && sep == 1)
+		if (format[i] != '\0' && sep == 1)
 		{
 			printf(", ");
 		}
