@@ -1,18 +1,18 @@
-global _start
+section .data
+    text db "Hello, Holberton",10
+    text_len equ $ -text
 
-section .text:
+
+section .text
+    global _start
 
 _start:
-    mov eax, 0x4
-    mov ebx, 1
-    mov ecx, message
-    mov edx, message_length
-    int 0x80
+    mov rax, 1
+    mov rdi, 0
+    mov rsi, text
+    mov rdx, text_len
+    syscall
 
-    mov eax, 0x1
-    mov ebx, 0
-    int 0x80
-
-section .data:
-    message: db "Hello, Holberton", 0xA
-    message_length equ $-message
+    mov rax, 60
+    mov rdi, 1
+    syscall
