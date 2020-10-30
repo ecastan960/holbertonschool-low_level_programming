@@ -11,12 +11,12 @@ int main(int argc, char **argv)
 {
 	if (argc != 4)
 	{
-		printf("Error98\n");
+		printf("Error\n");
 		exit(98);
 	}
 	if ((argv[2][0] == '/' || argv[2][0] == '%') && (argv[3][0] == '0'))
 	{
-		printf("Error100\n");
+		printf("Error\n");
 		exit(100);
 	}
 
@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		printf("Error99\n");
+		printf("Error\n");
 		exit(99);
 	}
 	return (0);
