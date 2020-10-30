@@ -30,7 +30,7 @@ int op_sub(int a, int b)
  * @a: integer
  * @b: integer
  *
- * Return: Nothing.
+ * Return: multiplication of two integer.
  */
 int op_mul(int a, int b)
 {
@@ -42,7 +42,7 @@ int op_mul(int a, int b)
  * @a: integer
  * @b: integer
  *
- * Return: Nothing.
+ * Return: division of two integers.
  */
 int op_div(int a, int b)
 {
@@ -54,7 +54,7 @@ int op_div(int a, int b)
  * @a: integer
  * @b: integer
  *
- * Return: Nothing.
+ * Return: module of two integers.
  */
 int op_mod(int a, int b)
 {
