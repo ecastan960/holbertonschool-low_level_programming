@@ -1,4 +1,5 @@
 #include "lists.h"
+
 /**
  * add_node - prints a string as integer
  *
@@ -16,7 +17,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (new == NULL || head == NULL || str == NULL)
 		return (NULL);
 	new->str = strdup(str);
-	new->len = strlen(str);
+	new->len = 2;
 	new->next = *head;
 	*head = new;
 	return (*head);
