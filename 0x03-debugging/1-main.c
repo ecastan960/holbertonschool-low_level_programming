@@ -15,7 +15,6 @@ int main(void)
 
 	while (i < 10)
 	{
-		/* Infinite loop  */
 		putchar(i);
 	}
 
