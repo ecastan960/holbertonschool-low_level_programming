@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
- * add_node - prints a string as integer
+ * add_nodeint - function to add a node
  *
  * @head: head
- * @str: string
+ * @n: number data in node
  *
- * Return: contador_fi
+ * Return: new head
  */
 
 
