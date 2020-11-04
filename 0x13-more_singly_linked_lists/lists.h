@@ -1,6 +1,6 @@
 #ifndef LISTS_H
 #define LISTS_H
-
+#include <stdio.h>
 
 /**
  * struct listint_s - singly linked list
@@ -11,7 +11,6 @@
  * for Holberton project
  */
 
-#include <stdio.h>
 typedef struct listint_s
 {
 	int n;
