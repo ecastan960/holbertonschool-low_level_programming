@@ -4,7 +4,7 @@
 
 
 /**
- * free_list- prints a string as integer
+ * free_listint- function that frees a list
  *
  * @head: head
  *
