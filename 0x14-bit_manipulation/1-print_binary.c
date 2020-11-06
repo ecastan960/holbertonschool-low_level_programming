@@ -39,16 +39,20 @@ void print_binary(unsigned long int n)
 		x = x * 2;
 		s++;
 	}
+	if (n > 1)
+	{
+		s = s - 1;
+	}
 	for (i = 0; i < s; i++)
 	{
 		if (n >= binary(s - i))
 		{
-			printf("1");
+			_putchar('1');
 			num = num - binary(s - i);
 		}
 		else
 		{
-			printf("0");
+			_putchar('0');
 		}
 	}
 }
