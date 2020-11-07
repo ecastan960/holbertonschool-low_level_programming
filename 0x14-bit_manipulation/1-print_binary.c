@@ -1,6 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
-#define ULONG_MAX 0xFFFFFFFFUL
+#define ULONG_MAX 0xFFFFFFFFFFFFFFFF
 
 /**
  * binary- function that finds int equivalent
@@ -33,9 +33,14 @@ unsigned long int binary(int n)
 void print_binary(unsigned long int n)
 {
 	unsigned long int x = 1, s = 1, i, num = n;
-	int r = 0;
-
-	while (n > x)
+	int r = 0, r1 = 0;
+	if (n == 4294967295)
+	{
+		for (i = 0; i < 64; i++)
+			_putchar('1');
+		r1 = 1;
+	}
+	while (n > x && r1 == 0)
 	{
 		x = x * 2;
 		s++;
@@ -53,7 +58,7 @@ void print_binary(unsigned long int n)
 	}
 	if (n > 1)
 		s--;
-	if (r == 0)
+	if (r == 0 && r1 == 0)
 	{
 		for (i = 0; i < s; i++)
 		{
