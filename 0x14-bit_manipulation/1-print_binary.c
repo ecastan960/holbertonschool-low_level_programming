@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
+#define ULONG_MAX 0xFFFFFFFFUL
 
 /**
  * binary- function that finds int equivalent
