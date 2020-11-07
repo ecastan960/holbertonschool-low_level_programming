@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 #include "holberton.h"
 
 /**
@@ -22,6 +23,10 @@ int set_bit(unsigned long int *n, unsigned int index)
 	{
 		x = x * 2;
 		count++;
+	}
+	if (x == 0 && index > 0)
+	{
+		return (-1);
 	}
 	if (x < *n)
 	{
