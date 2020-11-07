@@ -37,7 +37,7 @@ void print_binary(unsigned long int n)
 
 	if (n == 4294967295)
 	{
-		for (i = 0; i < 64; i++)
+		for (i = 0; i < 65; i++)
 			_putchar('1');
 		r1 = 1;
 	}
