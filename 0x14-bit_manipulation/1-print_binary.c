@@ -34,6 +34,7 @@ void print_binary(unsigned long int n)
 {
 	unsigned long int x = 1, s = 1, i, num = n;
 	int r = 0, r1 = 0;
+
 	if (n == 4294967295)
 	{
 		for (i = 0; i < 64; i++)
