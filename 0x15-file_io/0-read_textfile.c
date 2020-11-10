@@ -7,19 +7,7 @@
 #include <fcntl.h>
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
-/**
- * read_textfile - check the code for Holberton School students.
+ * read_textfile - function that read data from file to print on terminal
  *
  * @filename: Pointer to filaname
  * @letters: number of character in file
@@ -30,7 +18,7 @@ int _putchar(char c)
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 
-	int i = letters, a = 1, fname, b = 0;
+	int i = letters, a = 1, fname, b = 0, c, d;
 
 
 	char *p = (char *)malloc(i * sizeof(char) + 1);
@@ -43,13 +31,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 
-	read(fname, p, i);
-
+	d = read(fname, p, i);
+	if (d < 0)
+		return (0);
 	p[i+1]= '\0';
 
 	while(p[b])
 	{
-		_putchar(p[b]);
+		c = write(STDOUT_FILENO,&p[b],1);
+		if (c < 0)
+			return (0);
 		b++;
 		a++;
 	}
