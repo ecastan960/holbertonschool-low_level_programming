@@ -47,7 +47,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	p[i+1]= '\0';
 
-	printf("%s", p);
+	_putchar(p[0]);
 
 	close(fname);
 
