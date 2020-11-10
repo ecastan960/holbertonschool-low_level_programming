@@ -1,3 +1,4 @@
+#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -5,6 +6,17 @@
 #include <fcntl.h>
 #include <unistd.h>
 
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
 
 /**
  * read_textfile - check the code for Holberton School students.
@@ -18,17 +30,18 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 
-	int i = letters, a = 0;
-	char *p = (char *)malloc(i * sizeof(char));
-	FILE *fname;
+	int i = letters, a = 1;
+	char c;
+	FILE *fname = fopen(filename, "r");
 
 	if (filename == NULL)
 		return (0);
-	fname = fopen(filename, "r");
-	if (!fname)
-		return (0);
-	while (fgets(p, i, fname))
-		printf("%s\n", p);
+
+	while ((c = fgetc(fname)) != EOF && a < i)
+	{
+		_putchar(c);
+		a++;
+	}
 	fclose(fname);
 
 	return (a);
