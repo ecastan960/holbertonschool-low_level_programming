@@ -30,19 +30,26 @@ int _putchar(char c)
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 
-	int i = letters, a = 1;
-	char c;
-	FILE *fname = fopen(filename, "r");
+	int i = letters, a = 1, fname;
+
+
+	char *p = (char *)malloc(i * sizeof(char) + 1);
+	fname = open(filename, O_RDONLY, 0600);
 
 	if (filename == NULL)
 		return (0);
 
-	while ((c = fgetc(fname)) != EOF && a < i)
-	{
-		_putchar(c);
-		a++;
-	}
-	fclose(fname);
+	if (fname == -1)
+		return (0);
+
+
+	read(fname, p, i);
+
+	p[i+1]= '\0';
+
+	printf("%s", p);
+
+	close(fname);
 
 	return (a);
 }
