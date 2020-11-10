@@ -30,7 +30,7 @@ int _putchar(char c)
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 
-	int i = letters, a = 1, fname;
+	int i = letters, a = 1, fname, b = 0;
 
 
 	char *p = (char *)malloc(i * sizeof(char) + 1);
@@ -47,8 +47,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	p[i+1]= '\0';
 
-	_putchar(p[0]);
-
+	while(p[b])
+	{
+		_putchar(p[b]);
+		b++;
+		a++;
+	}
 	close(fname);
 
 	return (a);
