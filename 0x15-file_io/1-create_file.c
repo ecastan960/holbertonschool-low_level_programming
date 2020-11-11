@@ -21,6 +21,7 @@ int create_file(const char *filename, char *text_content)
 {
 
 	int fname, n = 0, a;
+
 	while (text_content[n])
 	{
 		n++;
