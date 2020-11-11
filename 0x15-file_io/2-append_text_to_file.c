@@ -9,7 +9,7 @@
 
 
 /**
- * create_file - function that creates a file with text
+ * append_text_to_file - function that creates a file with text
  *
  * @filename: Pointer to filaname
  * @text_content: content of the file
