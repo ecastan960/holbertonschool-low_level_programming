@@ -36,7 +36,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(p);
 		return (0);
 	}
-		
+
 	while (p[b])
 	{
 		c = write(STDOUT_FILENO, &p[b], 1);
@@ -51,7 +51,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	free(p);
 	close(fname);
-	
 
 	return (a);
 }
