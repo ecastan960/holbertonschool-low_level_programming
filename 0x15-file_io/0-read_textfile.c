@@ -29,9 +29,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fname == -1)
 		return (0);
 
-
 	d = read(fname, p, i);
-	if (d < 0)
+	if (d == -1)
 	{
 		free(p);
 		return (0);
@@ -40,7 +39,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	while (p[b])
 	{
 		c = write(STDOUT_FILENO, &p[b], 1);
-		if (c < 0)
+		if (c == -1)
 		{
 			free(p);
 			return (0);
