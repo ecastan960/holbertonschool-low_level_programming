@@ -22,10 +22,14 @@ int create_file(const char *filename, char *text_content)
 
 	int fname, n = 1, a;
 
+
 	while (text_content[n])
 	{
 		n++;
 	}
+
+	if (text_content == NULL)
+		n = 0;
 
 	if (filename == NULL)
 		return (-1);
