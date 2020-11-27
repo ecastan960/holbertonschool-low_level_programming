@@ -12,19 +12,11 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
+int i;
 
-int a = 0, b, c;
-
-for (c = 0 ; c < n; c++)
+for (i = 0; i < n; i++)
 {
-*dest = *src;
-dest++;
-src++;
-a = a + 1;
-}
-for (b = 0; b < a; b++)
-{
-dest--;
+	dest[i] = src[i];
 }
 return (dest);
 }
