@@ -7,18 +7,17 @@
  *
  */
 
-char *string_toupper(char *)
+char *string_toupper(char * s)
 {
-int d = 0, b, e = n;
-int *c;
-for (d = 0; d < n; d++)
-{
-c[d] = a[d];
-}
+	int  i = 0, temp, b = 1;
 
-for (b = 0; b < n; b++)
-{
-a[b] = c[e - 1];
-e = e - 1;
-}
+	while (s[i] != NULL)
+	{
+		if (s[i] > 96 && s[i] < 123)
+		{
+			s[i] = s[i] - 32;
+		}
+		i++;
+	}
+	return (s);
 }
