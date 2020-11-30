@@ -7,17 +7,27 @@
  *
  */
 
-char *cap_string(char *)
+char *cap_string(char *s)
 {
-int d = 0, b, e = n;
-int *c;
-for (d = 0; d < n; d++)
-{
-c[d] = a[d];
-}
-for (b = 0; b < n; b++)
-{
-a[b] = c[e - 1];
-e = e - 1;
-}
+	int  i = 0;
+
+	while (s[i] != '\0')
+	{
+		if (i == 0)
+		{
+			if (s[i] > 96 && s[i] < 123)
+			{
+				s[i] = s[i] - 32;
+			}
+		}
+		if (s[i] == ' ')
+		{
+			if (s[i + 1] > 96 && s[i + 1] < 123)
+			{
+				s[i + 1] = s[i + 1] - 32;
+			}
+		}
+		i++;
+	}
+	return (s);
 }
