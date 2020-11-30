@@ -3,6 +3,7 @@
 /**
  * string_toupper - This program will print using _putchar function
  * Description: prints Holberton using the function
+ * @s: Input string
  * Return: s
  *
  */
