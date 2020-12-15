@@ -1,4 +1,3 @@
 #!/bin/bash
-gcc *.c -c -fpic &
-wait $!
+gcc *.c -c -fPIC
 gcc *.o -shared -o liball.so
