@@ -16,6 +16,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	char *copy_v = malloc(sizeof(char));
 	char *copy_key = malloc(sizeof(char));
 	hash_node_t *new_node = malloc(sizeof(hash_node_t));
+	if (new_node == NULL)
+		return (0);
 
 	if (ht == NULL)
 		return (0);
