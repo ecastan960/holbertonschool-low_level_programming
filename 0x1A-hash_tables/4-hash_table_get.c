@@ -6,7 +6,8 @@
  * @ht: Hash table
  * @key: Key
  *
- * Return: value associated with the element, or NULL if key couldn’t be found
+ * Return: value associated with the element,
+ *  or NULL if key couldn’t be found
  */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
@@ -21,7 +22,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	index = key_index((unsigned char *)key, ht->size);
 	tmp = ht->array[index];
 
-	while (tmp != NULL )
+	while (tmp != NULL)
 	{
 		if (strcmp(tmp->key, key) == 0)
 		{
@@ -29,6 +30,5 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		}
 		tmp = tmp->next;
 	}
-	return NULL;
-
+	return (NULL);
 }
