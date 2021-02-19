@@ -2,8 +2,5 @@ CC = gcc
 SRC = $(wildcard *.c)
 
 
-all: task1
-
-
-task1:
+all:
 	${CC} ${SRC} -o holberton
