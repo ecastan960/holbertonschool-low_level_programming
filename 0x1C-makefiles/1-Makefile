@@ -1,7 +1,5 @@
 CC = gcc
 SRC = $(wildcard *.c)
-CFLAGS = -I.
 
-
-all: ${SRC}
-	    ${CC} ${SRC} -o holberton
+all: $(SRC)
+	    $(CC) $(SRC) -o holberton
