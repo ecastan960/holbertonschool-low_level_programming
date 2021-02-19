@@ -1,5 +1,7 @@
 CC = gcc
 SRC = main.c holberton.c
 
-all: $(SRC)
-	    $(CC) $(SRC) -o holberton
+all: task1
+
+task1:
+	$(CC) $(SRC) -o holberton
