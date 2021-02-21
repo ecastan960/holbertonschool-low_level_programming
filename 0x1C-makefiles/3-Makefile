@@ -6,17 +6,17 @@ NAME = holberton
 %.o: %.c
 	$(CC)   -c -o $@ $<
 
-all: task2
-
-
-task2: $(OBJ)
-	$(CC) -o $(OBJ)  $(NAME)
+all: $(OBJ)
+	$(CC) $(OBJ) -o  $(NAME)
 
 clean:
-    $(RM) $(NAME)
+	$(RM) -f $(NAME) $(*.~)
 
 oclean:
-    $(RM) $(OBJ)
+	$(RM) -f $(OBJ)
 
 fclean:
-    $(clean) $(oclean)
+	$(RM) -f $(NAME) $(*.~) $(OBJ)
+
+RE:fclean
+	make
