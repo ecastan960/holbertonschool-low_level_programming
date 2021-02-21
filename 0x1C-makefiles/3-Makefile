@@ -3,7 +3,7 @@ SRC = main.c holberton.c
 OBJ = $(SRC:%.c=%.o)
 NAME = holberton
 RM = rm
-TMP = $(*.c~)
+TMP = $(SRC:.c=.c~)
 
 
 %.o: %.c
