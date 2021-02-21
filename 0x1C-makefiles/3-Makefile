@@ -3,7 +3,7 @@ SRC = main.c holberton.c
 OBJ = $(SRC:%.c=%.o)
 NAME = holberton
 RM = rm
-TMP = $(SRC:%.c=%.c~)
+TMP = $(*.c~)
 
 
 %.o: %.c
@@ -15,14 +15,12 @@ all: $(OBJ)
 .PHONY:clean oclean fclean re
 
 clean:
-	$(RM) -f $(NAME)
-	$(RM) -f $(TMP)
+	$(RM) -f $(TMP) $(NAME)
 oclean:
 	$(RM) -f $(OBJ)
 
 fclean:
-	$(RM) -f $(NAME)
-	$(RM) -f $(TMP)
+	$(RM) -f $(TMP) $(NAME)
 	$(RM) -f $(OBJ)
 
 re: oclean $(OBJ) all
