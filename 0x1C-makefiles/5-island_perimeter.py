@@ -63,6 +63,14 @@ def check_around(x, y, grid):
         if grid[x - 1][y] == 0:
             per += 1
         return (per + 1)
+    elif y == len(grid[x]) - 1 and x != len(grid) - 1:
+        if grid[x][y - 1] == 0:
+            per += 1
+        if grid[x + 1][y] == 0:
+            per += 1
+        if grid[x - 1][y] == 0:
+            per += 1
+        return (per + 1)
     else:
         if grid[x][y + 1] == 0:
             per += 1
