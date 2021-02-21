@@ -17,11 +17,11 @@ clean:
 	$(RM) -f $(NAME)
 	$(RM) -f $(TMP)
 oclean:
-	$(RM) $(OBJ)
+	$(RM) -f $(OBJ)
 
 fclean:
-	$(RM) $(NAME)
-	$(RM) $(TMP)
-	$(RM) $(OBJ)
+	$(RM) -f $(NAME)
+	$(RM) -f $(TMP)
+	$(RM) -f $(OBJ)
 
 re: oclean $(OBJ) all
