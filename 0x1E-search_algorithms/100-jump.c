@@ -35,7 +35,7 @@ size_t l_search(int *array, size_t left, size_t right, int value)
 
 int jump_search(int *array, size_t size, int value)
 {
-	size_t j = sqrt(size - 1), index = 0;
+	size_t j = sqrt(size), index = 0;
 
 	if (array == NULL)
 		return (-1);
